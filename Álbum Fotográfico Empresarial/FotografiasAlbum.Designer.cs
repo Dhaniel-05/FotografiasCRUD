@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FotografiasAlbum));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.picFoto = new System.Windows.Forms.PictureBox();
             this.txtDescripcionImagen = new System.Windows.Forms.TextBox();
             this.dtFechaEvento = new System.Windows.Forms.DateTimePicker();
@@ -68,17 +68,19 @@
             // 
             // txtDescripcionImagen
             // 
+            this.txtDescripcionImagen.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtDescripcionImagen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescripcionImagen.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcionImagen.Location = new System.Drawing.Point(166, 273);
+            this.txtDescripcionImagen.Location = new System.Drawing.Point(166, 288);
             this.txtDescripcionImagen.Name = "txtDescripcionImagen";
-            this.txtDescripcionImagen.Size = new System.Drawing.Size(236, 24);
+            this.txtDescripcionImagen.Size = new System.Drawing.Size(236, 17);
             this.txtDescripcionImagen.TabIndex = 1;
             this.toolTip1.SetToolTip(this.txtDescripcionImagen, "Describa la imagen");
             // 
             // dtFechaEvento
             // 
             this.dtFechaEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtFechaEvento.Location = new System.Drawing.Point(543, 150);
+            this.dtFechaEvento.Location = new System.Drawing.Point(544, 132);
             this.dtFechaEvento.Name = "dtFechaEvento";
             this.dtFechaEvento.Size = new System.Drawing.Size(262, 24);
             this.dtFechaEvento.TabIndex = 2;
@@ -86,16 +88,21 @@
             // 
             // txtLugarEvento
             // 
+            this.txtLugarEvento.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtLugarEvento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLugarEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLugarEvento.Location = new System.Drawing.Point(820, 150);
+            this.txtLugarEvento.Location = new System.Drawing.Point(821, 132);
             this.txtLugarEvento.Name = "txtLugarEvento";
-            this.txtLugarEvento.Size = new System.Drawing.Size(383, 24);
+            this.txtLugarEvento.Size = new System.Drawing.Size(383, 17);
             this.txtLugarEvento.TabIndex = 3;
             this.toolTip1.SetToolTip(this.txtLugarEvento, "Escriba el lugar del evento");
             // 
             // txtDescripcionEvento
             // 
+            this.txtDescripcionEvento.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtDescripcionEvento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescripcionEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionEvento.ForeColor = System.Drawing.Color.Black;
             this.txtDescripcionEvento.Location = new System.Drawing.Point(543, 189);
             this.txtDescripcionEvento.Multiline = true;
             this.txtDescripcionEvento.Name = "txtDescripcionEvento";
@@ -107,7 +114,7 @@
             // 
             this.lblDescImagen.AutoSize = true;
             this.lblDescImagen.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescImagen.Location = new System.Drawing.Point(169, 263);
+            this.lblDescImagen.Location = new System.Drawing.Point(169, 269);
             this.lblDescImagen.Name = "lblDescImagen";
             this.lblDescImagen.Size = new System.Drawing.Size(155, 16);
             this.lblDescImagen.TabIndex = 5;
@@ -117,7 +124,7 @@
             // 
             this.lblFechaEvento.AutoSize = true;
             this.lblFechaEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaEvento.Location = new System.Drawing.Point(546, 139);
+            this.lblFechaEvento.Location = new System.Drawing.Point(547, 114);
             this.lblFechaEvento.Name = "lblFechaEvento";
             this.lblFechaEvento.Size = new System.Drawing.Size(105, 16);
             this.lblFechaEvento.TabIndex = 6;
@@ -127,7 +134,7 @@
             // 
             this.lblLugarEvento.AutoSize = true;
             this.lblLugarEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLugarEvento.Location = new System.Drawing.Point(823, 139);
+            this.lblLugarEvento.Location = new System.Drawing.Point(824, 114);
             this.lblLugarEvento.Name = "lblLugarEvento";
             this.lblLugarEvento.Size = new System.Drawing.Size(105, 16);
             this.lblLugarEvento.TabIndex = 7;
@@ -138,7 +145,7 @@
             this.lblDescEvent.AutoSize = true;
             this.lblDescEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblDescEvent.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescEvent.Location = new System.Drawing.Point(546, 178);
+            this.lblDescEvent.Location = new System.Drawing.Point(546, 170);
             this.lblDescEvent.Name = "lblDescEvent";
             this.lblDescEvent.Size = new System.Drawing.Size(140, 16);
             this.lblDescEvent.TabIndex = 8;
@@ -166,7 +173,7 @@
             this.btnSelect.FlatAppearance.BorderSize = 0;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelect.Image = ((System.Drawing.Image)(resources.GetObject("btnSelect.Image")));
-            this.btnSelect.Location = new System.Drawing.Point(122, 272);
+            this.btnSelect.Location = new System.Drawing.Point(122, 278);
             this.btnSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(37, 21);
@@ -198,7 +205,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(950, 278);
+            this.label13.Location = new System.Drawing.Point(950, 270);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(64, 16);
             this.label13.TabIndex = 120;
@@ -207,11 +214,14 @@
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.BackColor = System.Drawing.Color.DimGray;
+            this.txtBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.ForeColor = System.Drawing.Color.White;
             this.txtBusqueda.Location = new System.Drawing.Point(947, 288);
             this.txtBusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(256, 24);
+            this.txtBusqueda.Size = new System.Drawing.Size(256, 20);
             this.txtBusqueda.TabIndex = 119;
             this.toolTip1.SetToolTip(this.txtBusqueda, "Realice la búsqueda");
             this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
@@ -222,45 +232,45 @@
             this.dgvFotografias.AllowUserToDeleteRows = false;
             this.dgvFotografias.AllowUserToResizeColumns = false;
             this.dgvFotografias.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvFotografias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvFotografias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvFotografias.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvFotografias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFotografias.BackgroundColor = System.Drawing.Color.White;
             this.dgvFotografias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvFotografias.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvFotografias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFotografias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFotografias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvFotografias.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFotografias.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFotografias.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvFotografias.EnableHeadersVisualStyles = false;
             this.dgvFotografias.Location = new System.Drawing.Point(12, 320);
             this.dgvFotografias.Name = "dgvFotografias";
             this.dgvFotografias.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFotografias.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFotografias.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvFotografias.RowHeadersVisible = false;
             this.dgvFotografias.RowHeadersWidth = 62;
             this.dgvFotografias.RowTemplate.Height = 30;
