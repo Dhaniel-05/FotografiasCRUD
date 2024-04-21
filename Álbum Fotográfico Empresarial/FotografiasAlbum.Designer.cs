@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FotografiasAlbum));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.picFoto = new System.Windows.Forms.PictureBox();
             this.txtDescripcionImagen = new System.Windows.Forms.TextBox();
             this.dtFechaEvento = new System.Windows.Forms.DateTimePicker();
@@ -39,79 +44,92 @@
             this.lblLugarEvento = new System.Windows.Forms.Label();
             this.lblDescEvent = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.dgvFotografias = new System.Windows.Forms.DataGridView();
             this.btnSelect = new System.Windows.Forms.Button();
             this.txtFile = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
+            this.dgvFotografias = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFotografias)).BeginInit();
             this.SuspendLayout();
             // 
             // picFoto
             // 
-            this.picFoto.Location = new System.Drawing.Point(15, 47);
+            this.picFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picFoto.Location = new System.Drawing.Point(12, 54);
             this.picFoto.Name = "picFoto";
-            this.picFoto.Size = new System.Drawing.Size(280, 141);
-            this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picFoto.Size = new System.Drawing.Size(512, 206);
+            this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFoto.TabIndex = 0;
             this.picFoto.TabStop = false;
             // 
             // txtDescripcionImagen
             // 
-            this.txtDescripcionImagen.Location = new System.Drawing.Point(12, 245);
-            this.txtDescripcionImagen.Multiline = true;
+            this.txtDescripcionImagen.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionImagen.Location = new System.Drawing.Point(166, 273);
             this.txtDescripcionImagen.Name = "txtDescripcionImagen";
-            this.txtDescripcionImagen.Size = new System.Drawing.Size(280, 71);
+            this.txtDescripcionImagen.Size = new System.Drawing.Size(236, 24);
             this.txtDescripcionImagen.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.txtDescripcionImagen, "Describa la imagen");
             // 
             // dtFechaEvento
             // 
-            this.dtFechaEvento.Location = new System.Drawing.Point(12, 342);
+            this.dtFechaEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtFechaEvento.Location = new System.Drawing.Point(543, 150);
             this.dtFechaEvento.Name = "dtFechaEvento";
-            this.dtFechaEvento.Size = new System.Drawing.Size(280, 20);
+            this.dtFechaEvento.Size = new System.Drawing.Size(262, 24);
             this.dtFechaEvento.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.dtFechaEvento, "Seleccione la fecha del evento");
             // 
             // txtLugarEvento
             // 
-            this.txtLugarEvento.Location = new System.Drawing.Point(12, 386);
+            this.txtLugarEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLugarEvento.Location = new System.Drawing.Point(820, 150);
             this.txtLugarEvento.Name = "txtLugarEvento";
-            this.txtLugarEvento.Size = new System.Drawing.Size(280, 20);
+            this.txtLugarEvento.Size = new System.Drawing.Size(383, 24);
             this.txtLugarEvento.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.txtLugarEvento, "Escriba el lugar del evento");
             // 
             // txtDescripcionEvento
             // 
-            this.txtDescripcionEvento.Location = new System.Drawing.Point(9, 433);
+            this.txtDescripcionEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionEvento.Location = new System.Drawing.Point(543, 189);
             this.txtDescripcionEvento.Multiline = true;
             this.txtDescripcionEvento.Name = "txtDescripcionEvento";
-            this.txtDescripcionEvento.Size = new System.Drawing.Size(283, 71);
+            this.txtDescripcionEvento.Size = new System.Drawing.Size(660, 71);
             this.txtDescripcionEvento.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.txtDescripcionEvento, "De una descripción detallada del evento");
             // 
             // lblDescImagen
             // 
             this.lblDescImagen.AutoSize = true;
-            this.lblDescImagen.Location = new System.Drawing.Point(15, 235);
+            this.lblDescImagen.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescImagen.Location = new System.Drawing.Point(169, 263);
             this.lblDescImagen.Name = "lblDescImagen";
-            this.lblDescImagen.Size = new System.Drawing.Size(126, 13);
+            this.lblDescImagen.Size = new System.Drawing.Size(155, 16);
             this.lblDescImagen.TabIndex = 5;
             this.lblDescImagen.Text = "Descripción de la imagen";
             // 
             // lblFechaEvento
             // 
             this.lblFechaEvento.AutoSize = true;
-            this.lblFechaEvento.Location = new System.Drawing.Point(15, 331);
+            this.lblFechaEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaEvento.Location = new System.Drawing.Point(546, 139);
             this.lblFechaEvento.Name = "lblFechaEvento";
-            this.lblFechaEvento.Size = new System.Drawing.Size(90, 13);
+            this.lblFechaEvento.Size = new System.Drawing.Size(105, 16);
             this.lblFechaEvento.TabIndex = 6;
             this.lblFechaEvento.Text = "Fecha del evento";
             // 
             // lblLugarEvento
             // 
             this.lblLugarEvento.AutoSize = true;
-            this.lblLugarEvento.Location = new System.Drawing.Point(15, 375);
+            this.lblLugarEvento.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLugarEvento.Location = new System.Drawing.Point(823, 139);
             this.lblLugarEvento.Name = "lblLugarEvento";
-            this.lblLugarEvento.Size = new System.Drawing.Size(87, 13);
+            this.lblLugarEvento.Size = new System.Drawing.Size(105, 16);
             this.lblLugarEvento.TabIndex = 7;
             this.lblLugarEvento.Text = "Lugar del evento";
             // 
@@ -119,38 +137,27 @@
             // 
             this.lblDescEvent.AutoSize = true;
             this.lblDescEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblDescEvent.Location = new System.Drawing.Point(12, 422);
+            this.lblDescEvent.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescEvent.Location = new System.Drawing.Point(546, 178);
             this.lblDescEvent.Name = "lblDescEvent";
-            this.lblDescEvent.Size = new System.Drawing.Size(116, 13);
+            this.lblDescEvent.Size = new System.Drawing.Size(140, 16);
             this.lblDescEvent.TabIndex = 8;
             this.lblDescEvent.Text = "Descripción del evento";
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.Location = new System.Drawing.Point(331, 370);
+            this.btnGuardar.Location = new System.Drawing.Point(1149, 54);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(54, 55);
+            this.btnGuardar.Size = new System.Drawing.Size(54, 72);
             this.btnGuardar.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.btnGuardar, "Guardar registro");
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // dgvFotografias
-            // 
-            this.dgvFotografias.AllowUserToAddRows = false;
-            this.dgvFotografias.AllowUserToDeleteRows = false;
-            this.dgvFotografias.BackgroundColor = System.Drawing.Color.White;
-            this.dgvFotografias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFotografias.Location = new System.Drawing.Point(331, 166);
-            this.dgvFotografias.Name = "dgvFotografias";
-            this.dgvFotografias.ReadOnly = true;
-            this.dgvFotografias.Size = new System.Drawing.Size(516, 150);
-            this.dgvFotografias.TabIndex = 10;
-            this.dgvFotografias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFotografias_CellContentClick);
-            this.dgvFotografias.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvFotografias_CellPainting);
             // 
             // btnSelect
             // 
@@ -159,18 +166,19 @@
             this.btnSelect.FlatAppearance.BorderSize = 0;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelect.Image = ((System.Drawing.Image)(resources.GetObject("btnSelect.Image")));
-            this.btnSelect.Location = new System.Drawing.Point(132, 196);
+            this.btnSelect.Location = new System.Drawing.Point(122, 272);
             this.btnSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(37, 21);
             this.btnSelect.TabIndex = 11;
             this.btnSelect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolTip1.SetToolTip(this.btnSelect, "Cargar imagen desde PC");
             this.btnSelect.UseVisualStyleBackColor = false;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // txtFile
             // 
-            this.txtFile.Location = new System.Drawing.Point(331, 138);
+            this.txtFile.Location = new System.Drawing.Point(13, 98);
             this.txtFile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFile.Name = "txtFile";
             this.txtFile.Size = new System.Drawing.Size(13, 20);
@@ -179,7 +187,7 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(352, 138);
+            this.txtId.Location = new System.Drawing.Point(13, 68);
             this.txtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(13, 20);
@@ -189,10 +197,10 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-            this.label13.Location = new System.Drawing.Point(594, 124);
+            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(950, 278);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 13);
+            this.label13.Size = new System.Drawing.Size(64, 16);
             this.label13.TabIndex = 120;
             this.label13.Text = "Búsqueda";
             this.label13.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -200,24 +208,92 @@
             // txtBusqueda
             // 
             this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusqueda.Location = new System.Drawing.Point(591, 134);
+            this.txtBusqueda.Location = new System.Drawing.Point(947, 288);
             this.txtBusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(256, 24);
             this.txtBusqueda.TabIndex = 119;
+            this.toolTip1.SetToolTip(this.txtBusqueda, "Realice la búsqueda");
             this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
+            // 
+            // dgvFotografias
+            // 
+            this.dgvFotografias.AllowUserToAddRows = false;
+            this.dgvFotografias.AllowUserToDeleteRows = false;
+            this.dgvFotografias.AllowUserToResizeColumns = false;
+            this.dgvFotografias.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvFotografias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvFotografias.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvFotografias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvFotografias.BackgroundColor = System.Drawing.Color.White;
+            this.dgvFotografias.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvFotografias.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvFotografias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFotografias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvFotografias.ColumnHeadersHeight = 30;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFotografias.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvFotografias.EnableHeadersVisualStyles = false;
+            this.dgvFotografias.Location = new System.Drawing.Point(12, 320);
+            this.dgvFotografias.Name = "dgvFotografias";
+            this.dgvFotografias.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFotografias.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvFotografias.RowHeadersVisible = false;
+            this.dgvFotografias.RowHeadersWidth = 62;
+            this.dgvFotografias.RowTemplate.Height = 30;
+            this.dgvFotografias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvFotografias.Size = new System.Drawing.Size(1192, 191);
+            this.dgvFotografias.TabIndex = 121;
+            this.dgvFotografias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFotografias_CellContentClick);
+            this.dgvFotografias.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvFotografias_CellPainting);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(463, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(291, 23);
+            this.label1.TabIndex = 122;
+            this.label1.Text = "Álbum Fotográfico Empresarial ";
             // 
             // FotografiasAlbum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 516);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1216, 523);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgvFotografias);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtFile);
             this.Controls.Add(this.btnSelect);
-            this.Controls.Add(this.dgvFotografias);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.lblDescEvent);
             this.Controls.Add(this.lblLugarEvento);
@@ -228,9 +304,9 @@
             this.Controls.Add(this.dtFechaEvento);
             this.Controls.Add(this.txtDescripcionImagen);
             this.Controls.Add(this.picFoto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FotografiasAlbum";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.FotografiasAlbum_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFotografias)).EndInit();
@@ -251,12 +327,14 @@
         private System.Windows.Forms.Label lblLugarEvento;
         private System.Windows.Forms.Label lblDescEvent;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.DataGridView dgvFotografias;
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.TextBox txtFile;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtBusqueda;
+        public System.Windows.Forms.DataGridView dgvFotografias;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

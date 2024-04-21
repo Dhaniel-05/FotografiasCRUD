@@ -17,3 +17,5 @@ Select * From Fotografias
 SELECT IdFotografias, Foto, DescripcionImagen, FechaEvento, Lugar, DescripcionEvento FROM Fotografias WHERE IdFotografias = 2
 
 GO
+Select IdFotografias, Foto, DescripcionImagen AS 'Descripción de la imagen', FechaEvento AS 'Fecha del evento', Lugar, DescripcionEvento AS 'Descripción del evento' From Fotografias;
+GO

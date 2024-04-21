@@ -14,7 +14,8 @@ namespace Álbum_Fotográfico_Empresarial.Datos
         public DataTable ListarFotografias()
         {
             Conexion conexion = new Conexion();
-            string readLlenar = "Select * From Fotografias";
+            //string readLlenar = "Select * From Fotografias";
+            string readLlenar = "Select IdFotografias, Foto, DescripcionImagen AS 'Descripción de la imagen', FechaEvento AS 'Fecha del evento', Lugar, DescripcionEvento AS 'Descripción del evento' From Fotografias;\r\n";
             SqlCommand sql = new SqlCommand(readLlenar, conexion.conectar());
             SqlDataAdapter sqlData = new SqlDataAdapter(sql);
             DataTable dt = new DataTable();
