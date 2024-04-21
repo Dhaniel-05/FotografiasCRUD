@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dhany\\3D Objects\\Software C#\\C# David Papamija\\Fotos_Enterprise\\",
+  "WorkspaceRootPath": "C:\\Users\\dhany\\3D Objects\\Software C#\\Fotos_CRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B79D32FC-9DF5-4594-8695-386A514FB89E}|\u00C1lbum Fotogr\u00E1fico Empresarial\\\u00C1lbum Fotogr\u00E1fico Empresarial.csproj|c:\\users\\dhany\\3d objects\\software c#\\c# david papamija\\fotos_enterprise\\\u00E1lbum fotogr\u00E1fico empresarial\\fotografiasalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B79D32FC-9DF5-4594-8695-386A514FB89E}|\u00C1lbum Fotogr\u00E1fico Empresarial\\\u00C1lbum Fotogr\u00E1fico Empresarial.csproj|c:\\users\\dhany\\3d objects\\software c#\\fotos_crud\\\u00E1lbum fotogr\u00E1fico empresarial\\fotografiasalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B79D32FC-9DF5-4594-8695-386A514FB89E}|\u00C1lbum Fotogr\u00E1fico Empresarial\\\u00C1lbum Fotogr\u00E1fico Empresarial.csproj|solutionrelative:\u00E1lbum fotogr\u00E1fico empresarial\\fotografiasalbum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FotografiasAlbum.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\dhany\\3D Objects\\Software C#\\C# David Papamija\\Fotos_Enterprise\\\u00C1lbum Fotogr\u00E1fico Empresarial\\FotografiasAlbum.cs",
+              "DocumentMoniker": "C:\\Users\\dhany\\3D Objects\\Software C#\\Fotos_CRUD\\\u00C1lbum Fotogr\u00E1fico Empresarial\\FotografiasAlbum.cs",
               "RelativeDocumentMoniker": "\u00C1lbum Fotogr\u00E1fico Empresarial\\FotografiasAlbum.cs",
-              "ToolTip": "C:\\Users\\dhany\\3D Objects\\Software C#\\C# David Papamija\\Fotos_Enterprise\\\u00C1lbum Fotogr\u00E1fico Empresarial\\FotografiasAlbum.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\dhany\\3D Objects\\Software C#\\Fotos_CRUD\\\u00C1lbum Fotogr\u00E1fico Empresarial\\FotografiasAlbum.cs [Dise\u00F1o]",
               "RelativeToolTip": "\u00C1lbum Fotogr\u00E1fico Empresarial\\FotografiasAlbum.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T01:06:55.95Z",

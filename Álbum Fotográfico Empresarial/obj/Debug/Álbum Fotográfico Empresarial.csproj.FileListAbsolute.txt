@@ -8,3 +8,13 @@ C:\Users\dhany\3D Objects\Software C#\C# David Papamija\Fotos_Enterprise\Álbum 
 C:\Users\dhany\3D Objects\Software C#\C# David Papamija\Fotos_Enterprise\Álbum Fotográfico Empresarial\obj\Debug\Álbum Fotográfico Empresarial.exe
 C:\Users\dhany\3D Objects\Software C#\C# David Papamija\Fotos_Enterprise\Álbum Fotográfico Empresarial\obj\Debug\Álbum Fotográfico Empresarial.pdb
 C:\Users\dhany\3D Objects\Software C#\C# David Papamija\Fotos_Enterprise\Álbum Fotográfico Empresarial\obj\Debug\Álbum_Fotográfico_Empresarial.FotografiasAlbum.resources
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\bin\Debug\Álbum Fotográfico Empresarial.exe.config
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\bin\Debug\Álbum Fotográfico Empresarial.exe
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\bin\Debug\Álbum Fotográfico Empresarial.pdb
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\obj\Debug\Álbum Fotográfico Empresarial.csproj.AssemblyReference.cache
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\obj\Debug\Álbum_Fotográfico_Empresarial.FotografiasAlbum.resources
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\obj\Debug\Álbum_Fotográfico_Empresarial.Properties.Resources.resources
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\obj\Debug\Álbum Fotográfico Empresarial.csproj.GenerateResource.cache
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\obj\Debug\Álbum Fotográfico Empresarial.csproj.CoreCompileInputs.cache
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\obj\Debug\Álbum Fotográfico Empresarial.exe
+C:\Users\dhany\3D Objects\Software C#\Fotos_CRUD\Álbum Fotográfico Empresarial\obj\Debug\Álbum Fotográfico Empresarial.pdb

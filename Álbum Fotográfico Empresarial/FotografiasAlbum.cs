@@ -50,10 +50,12 @@ namespace Álbum_Fotográfico_Empresarial
             //Aquí se traen los datos en el orden en el que están en la consulta de la base de datos y se muestra lo que se desea mostrar en el DataGridView con true y lo que no con false.
             dgvFotografias.Columns[0].Visible = true; //Este es el espacio para el botón de Editar
             dgvFotografias.Columns[1].Visible = true; //Este es el espacio para el botón de Eliminar
-            dgvFotografias.Columns[2].Visible = true; //Al agregar las dos columnas de botones al data grid el orden de la consulta cambia y este es el IdUsuario que se debe ocultar. 
+            dgvFotografias.Columns[2].Visible = false; //Este es el Id. 
             dgvFotografias.Columns[3].Visible = true;
             dgvFotografias.Columns[4].Visible = true;
             dgvFotografias.Columns[5].Visible = true;
+            dgvFotografias.Columns[6].Visible = true;
+            dgvFotografias.Columns[7].Visible = true;
 
         }
 
@@ -249,5 +251,71 @@ namespace Álbum_Fotográfico_Empresarial
             txtLugarEvento.Text = "";
             txtDescripcionEvento.Text = "";
         }
+
+        private void txtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+            //Cuando el texto cambia busca en la base de datos según los datos ingresados.
+            string filtro = txtBusqueda.Text;
+
+            if (dgvFotografias.DataSource is DataView dataView)
+            {
+                FiltrarDatos(dataView, filtro);
+            }
+            else if (dgvFotografias.DataSource is DataTable dataTable)
+            {
+                DataView dvTarifas = dataTable.DefaultView;
+                FiltrarDatos(dvTarifas, filtro);
+            }
+        }
+
+        // Método filtrar datos mejorado para la búsqueda indexada manejando la excepción de array de bytes. 
+        private void FiltrarDatos(DataView dataView, string filtro)
+        {
+            var columnasVisibles = dgvFotografias.Columns.Cast<DataGridViewColumn>()
+                .Where(column => column.Visible)
+                .Select(column => column.Name);
+
+            StringBuilder filtroColumnas = new StringBuilder();
+
+            foreach (string columna in columnasVisibles)
+            {
+                if (dataView.Table.Columns.Contains(columna))
+                {
+                    var columnaDataType = dataView.Table.Columns[columna].DataType;
+
+                    try
+                    {
+                        if (columnaDataType == typeof(byte[]))
+                        {
+                            throw new NotSupportedException("");
+                        }
+                        else if (columnaDataType == typeof(DateTime) || columnaDataType == typeof(decimal) || columnaDataType == typeof(int))
+                        {
+                            filtroColumnas.Append($"CONVERT([{columna}], 'System.String') LIKE '%{filtro}%' OR ");
+                        }
+                        else
+                        {
+                            filtroColumnas.Append($"[{columna}] LIKE '%{filtro}%' OR ");
+                        }
+                    }
+                    catch (NotSupportedException ex)
+                    {
+                        // Manejar la excepción, no hacer nada para que continue con el flujo normal.
+                    }
+                }
+            }
+
+            // Eliminar el último "OR" del filtro y aplicar el filtro al DataView del DataGridView
+            if (filtroColumnas.Length > 0)
+            {
+                filtroColumnas.Length -= 4; // Eliminar los últimos 4 caracteres (" OR ")
+                dataView.RowFilter = filtroColumnas.ToString();
+            }
+            else
+            {
+                dataView.RowFilter = string.Empty;
+            }
+        }
+
     }
 }

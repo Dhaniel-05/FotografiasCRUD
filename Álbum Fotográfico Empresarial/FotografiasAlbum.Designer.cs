@@ -43,13 +43,15 @@
             this.btnSelect = new System.Windows.Forms.Button();
             this.txtFile = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtBusqueda = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFotografias)).BeginInit();
             this.SuspendLayout();
             // 
             // picFoto
             // 
-            this.picFoto.Location = new System.Drawing.Point(12, 12);
+            this.picFoto.Location = new System.Drawing.Point(15, 47);
             this.picFoto.Name = "picFoto";
             this.picFoto.Size = new System.Drawing.Size(280, 141);
             this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -58,7 +60,7 @@
             // 
             // txtDescripcionImagen
             // 
-            this.txtDescripcionImagen.Location = new System.Drawing.Point(9, 166);
+            this.txtDescripcionImagen.Location = new System.Drawing.Point(12, 245);
             this.txtDescripcionImagen.Multiline = true;
             this.txtDescripcionImagen.Name = "txtDescripcionImagen";
             this.txtDescripcionImagen.Size = new System.Drawing.Size(280, 71);
@@ -66,21 +68,21 @@
             // 
             // dtFechaEvento
             // 
-            this.dtFechaEvento.Location = new System.Drawing.Point(9, 263);
+            this.dtFechaEvento.Location = new System.Drawing.Point(12, 342);
             this.dtFechaEvento.Name = "dtFechaEvento";
             this.dtFechaEvento.Size = new System.Drawing.Size(280, 20);
             this.dtFechaEvento.TabIndex = 2;
             // 
             // txtLugarEvento
             // 
-            this.txtLugarEvento.Location = new System.Drawing.Point(9, 307);
+            this.txtLugarEvento.Location = new System.Drawing.Point(12, 386);
             this.txtLugarEvento.Name = "txtLugarEvento";
             this.txtLugarEvento.Size = new System.Drawing.Size(280, 20);
             this.txtLugarEvento.TabIndex = 3;
             // 
             // txtDescripcionEvento
             // 
-            this.txtDescripcionEvento.Location = new System.Drawing.Point(6, 354);
+            this.txtDescripcionEvento.Location = new System.Drawing.Point(9, 433);
             this.txtDescripcionEvento.Multiline = true;
             this.txtDescripcionEvento.Name = "txtDescripcionEvento";
             this.txtDescripcionEvento.Size = new System.Drawing.Size(283, 71);
@@ -89,7 +91,7 @@
             // lblDescImagen
             // 
             this.lblDescImagen.AutoSize = true;
-            this.lblDescImagen.Location = new System.Drawing.Point(12, 156);
+            this.lblDescImagen.Location = new System.Drawing.Point(15, 235);
             this.lblDescImagen.Name = "lblDescImagen";
             this.lblDescImagen.Size = new System.Drawing.Size(126, 13);
             this.lblDescImagen.TabIndex = 5;
@@ -98,7 +100,7 @@
             // lblFechaEvento
             // 
             this.lblFechaEvento.AutoSize = true;
-            this.lblFechaEvento.Location = new System.Drawing.Point(12, 252);
+            this.lblFechaEvento.Location = new System.Drawing.Point(15, 331);
             this.lblFechaEvento.Name = "lblFechaEvento";
             this.lblFechaEvento.Size = new System.Drawing.Size(90, 13);
             this.lblFechaEvento.TabIndex = 6;
@@ -107,7 +109,7 @@
             // lblLugarEvento
             // 
             this.lblLugarEvento.AutoSize = true;
-            this.lblLugarEvento.Location = new System.Drawing.Point(12, 296);
+            this.lblLugarEvento.Location = new System.Drawing.Point(15, 375);
             this.lblLugarEvento.Name = "lblLugarEvento";
             this.lblLugarEvento.Size = new System.Drawing.Size(87, 13);
             this.lblLugarEvento.TabIndex = 7;
@@ -117,7 +119,7 @@
             // 
             this.lblDescEvent.AutoSize = true;
             this.lblDescEvent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblDescEvent.Location = new System.Drawing.Point(9, 343);
+            this.lblDescEvent.Location = new System.Drawing.Point(12, 422);
             this.lblDescEvent.Name = "lblDescEvent";
             this.lblDescEvent.Size = new System.Drawing.Size(116, 13);
             this.lblDescEvent.TabIndex = 8;
@@ -145,7 +147,7 @@
             this.dgvFotografias.Location = new System.Drawing.Point(331, 166);
             this.dgvFotografias.Name = "dgvFotografias";
             this.dgvFotografias.ReadOnly = true;
-            this.dgvFotografias.Size = new System.Drawing.Size(432, 150);
+            this.dgvFotografias.Size = new System.Drawing.Size(516, 150);
             this.dgvFotografias.TabIndex = 10;
             this.dgvFotografias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFotografias_CellContentClick);
             this.dgvFotografias.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvFotografias_CellPainting);
@@ -157,7 +159,7 @@
             this.btnSelect.FlatAppearance.BorderSize = 0;
             this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelect.Image = ((System.Drawing.Image)(resources.GetObject("btnSelect.Image")));
-            this.btnSelect.Location = new System.Drawing.Point(299, 85);
+            this.btnSelect.Location = new System.Drawing.Point(132, 196);
             this.btnSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(37, 21);
@@ -168,7 +170,7 @@
             // 
             // txtFile
             // 
-            this.txtFile.Location = new System.Drawing.Point(299, 55);
+            this.txtFile.Location = new System.Drawing.Point(331, 138);
             this.txtFile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFile.Name = "txtFile";
             this.txtFile.Size = new System.Drawing.Size(13, 20);
@@ -177,18 +179,41 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(299, 14);
+            this.txtId.Location = new System.Drawing.Point(352, 138);
             this.txtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(13, 20);
             this.txtId.TabIndex = 77;
             this.txtId.Visible = false;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label13.Location = new System.Drawing.Point(594, 124);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(55, 13);
+            this.label13.TabIndex = 120;
+            this.label13.Text = "Búsqueda";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // txtBusqueda
+            // 
+            this.txtBusqueda.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(591, 134);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBusqueda.Name = "txtBusqueda";
+            this.txtBusqueda.Size = new System.Drawing.Size(256, 24);
+            this.txtBusqueda.TabIndex = 119;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
+            // 
             // FotografiasAlbum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 447);
+            this.ClientSize = new System.Drawing.Size(859, 516);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtFile);
             this.Controls.Add(this.btnSelect);
@@ -230,6 +255,8 @@
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.TextBox txtFile;
         private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtBusqueda;
     }
 }
 
