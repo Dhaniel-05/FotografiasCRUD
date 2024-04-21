@@ -1,0 +1,10 @@
+Álbum fotográfico empresarial: Gestiona las fotografías de los
+eventos de la empresa. Para ello las imágenes van acompañadas de
+la siguiente información: Descripción de la imagen(máximo 100
+caracteres y mínimo 25), fecha del evento, lugar y descripción del
+evento. La información debe almacenarse en una base datos MySQL
+o MariaDB y permitir la gestión desde la aplicación.
+Nota: La aplicación debe implementar las operaciones del CRUD(Crear,
+Leer, Actualizar y Borrar ), opción de búsqueda y funcionalidades de
+avance y retroceso. Donde sea necesario se deben validar los valores,
+usar diálogos de información donde se requiera y controlar excepciones
